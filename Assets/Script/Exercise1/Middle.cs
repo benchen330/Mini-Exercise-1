@@ -25,7 +25,8 @@ public class Middle : MonoBehaviour
     {
         if (animate)
         {
-            transform.RotateAround(buttom.transform.position, rotateAxis, speed * Time.deltaTime * direction);
+            transform.RotateAround(buttom.transform.position, buttom.transform.right, speed * Time.deltaTime * direction);
+            //transform.RotateAround(buttom.transform.position, rotateAxis, speed * Time.deltaTime * direction);
             //transform.RotateAround(buttom.transform.position, rotateAxis, speed);
         }
     }
