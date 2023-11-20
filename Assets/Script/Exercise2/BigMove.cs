@@ -9,10 +9,14 @@ public class BigMove : MonoBehaviour
     float horizontalMove;
     float verticalMove;
 
+    [SerializeField] GameObject bullet = null;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
+
+        //InvokeRepeating("Attack", 0f, 1f);
     }
 
     // Update is called once per frame
@@ -60,6 +64,14 @@ public class BigMove : MonoBehaviour
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
+    }
+
+    private void Attack()
+    {
+        Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, 0));
+        Instantiate(bullet, transform.position, Quaternion.Euler(0, 90, 0));
+        Instantiate(bullet, transform.position, Quaternion.Euler(0, 180, 0));
+        Instantiate(bullet, transform.position, Quaternion.Euler(0, -90, 0));
     }
 }
 

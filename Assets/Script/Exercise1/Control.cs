@@ -70,6 +70,13 @@ public class Control : MonoBehaviour
             //buttomAnimate = !buttomAnimate;
             buttom.GetComponent<Buttom>().setAnimate2();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            //buttomAnimate = !buttomAnimate;
+            middle3.GetComponent<Joint>().setAnimate();
+        }
     }
 
     public bool getTop()

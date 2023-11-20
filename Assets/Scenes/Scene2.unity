@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  bullet: {fileID: 159450843544888842, guid: 0fab6099c91b6bb46835bd51381fa444, type: 3}
 --- !u!54 &234183416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -265,7 +266,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
@@ -468,6 +469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Control
       objectReference: {fileID: 0}
+    - target: {fileID: 6495633688003969750, guid: 5450e11bf09a458488922621c252bef5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6800363470685692101, guid: 5450e11bf09a458488922621c252bef5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -633,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6586244826686591207, guid: 41f047bc2e4563b40bcabc0fe56ff80b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 6.61
       objectReference: {fileID: 0}
     - target: {fileID: 6586244826686591207, guid: 41f047bc2e4563b40bcabc0fe56ff80b, type: 3}
       propertyPath: m_LocalPosition.y

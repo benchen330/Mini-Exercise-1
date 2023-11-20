@@ -29,7 +29,7 @@ public class Top : MonoBehaviour
                 change += Tspeed * Time.deltaTime;
                 transform.Translate(transform.up * Tspeed * Time.deltaTime, Space.World);
 
-
+                //transform.Translate(Vector3.up * Tspeed * Time.deltaTime);
                 //transform.Translate(0, Tspeed * Time.deltaTime, 0);
             }
             else
