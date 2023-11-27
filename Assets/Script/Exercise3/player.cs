@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmallMove : MonoBehaviour
+public class player : MonoBehaviour
 {
     private Rigidbody rig;
+    public float speed = 3f;
+    float horizontalMove;
+    float verticalMove;
 
     // Start is called before the first frame update
     void Start()
@@ -15,22 +18,18 @@ public class SmallMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        horizontalMove = Input.GetAxisRaw("Horizontal");
+        verticalMove = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
     {
-        //Stop();
+        Move1();
     }
 
-    void Stop()
+    void Move1()
     {
-        rig.velocity = Vector3.zero;
+        rig.velocity =
+               new Vector3(horizontalMove * speed, 0, verticalMove * speed);
     }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        rig.velocity = Vector3.zero;
-    }
-
 }
