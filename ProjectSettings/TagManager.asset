@@ -16,8 +16,8 @@ TagManager:
   - Plane
   - Player
   - Obstacle
-  - 
-  - 
+  - Enemy Bullet
+  - AttackRange
   - 
   - 
   - 

@@ -60,7 +60,7 @@ public class PlayerMove : MonoBehaviour
             return;
         }
         
-        for(int i=0;i< agent.path.corners.Length; ++i)
+        for(int i=1;i< agent.path.corners.Length; ++i)
         {
             Vector3 positionPoint = new Vector3(agent.path.corners[i].x, agent.path.corners[i].y, agent.path.corners[i].z);
             line.SetPosition(i, positionPoint);

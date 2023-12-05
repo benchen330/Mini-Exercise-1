@@ -37,6 +37,7 @@ public class bulletChase : MonoBehaviour
         Vector3 p2 = target.transform.position;
         Vector3 v = p2 - p1;
 
+        v.y = 0;
         dir = v.normalized;
     }
 }
